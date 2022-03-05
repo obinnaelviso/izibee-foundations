@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif; }
+
+p,
+a,
+li {
+  font-family: "Poppins", sans-serif; }
+
+a {
+  text-decoration: none !important;
+  color: #000 !important; }
+
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important; }
+
+.texted {
+  z-index: 1111; }
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.05); }
+
+.top-nav {
+  background: #f89d35;
+  padding: 10px 0 10px 0; }
+  .top-nav .container .row .col-auto p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px; }
+  .top-nav .container .row .socials a {
+    color: #fff !important;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; }
+  .top-nav i,
+  .top-nav span {
+    vertical-align: middle; }
+
+@media (max-width: 992px) {
+  .navvy {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+.navbar {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  z-index: 1111111111111111111111111; }
+  .navbar .container a {
+    color: #000 !important; }
+  .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover, .navbar .container .collapse .navbar-nav .nav-item .nav-link:active {
+    color: #6610f2 !important; }
+  .navbar .container .collapse .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .navbar .container .collapse .btn a {
+      color: #fff !important; }
+    .navbar .container .collapse .btn:hover {
+      background: #6610f2; }
+
+.slider-wrapper .slide1 {
+  position: relative;
+  background-image: url(../img/izi-6.jpg);
+  z-index: -1; }
+  .slider-wrapper .slide1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-color: #000; }
+  .slider-wrapper .slide1 .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .slider-wrapper .slide1 .btn a {
+      color: #fff !important; }
+    .slider-wrapper .slide1 .btn:hover {
+      background: #6610f2; }
+.slider-wrapper .slide2 {
+  position: relative;
+  background-image: url(../img/izi-5.jpg);
+  z-index: -1; }
+  .slider-wrapper .slide2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-color: #000; }
+  .slider-wrapper .slide2 .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .slider-wrapper .slide2 .btn a {
+      color: #fff !important; }
+    .slider-wrapper .slide2 .btn:hover {
+      background: #6610f2; }
+.slider-wrapper .slide3 {
+  position: relative;
+  background-image: url(../img/izi-6.jpg);
+  z-index: -1; }
+  .slider-wrapper .slide3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-color: #000; }
+  .slider-wrapper .slide3 .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .slider-wrapper .slide3 .btn a {
+      color: #fff !important; }
+    .slider-wrapper .slide3 .btn:hover {
+      background: #6610f2; }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 45px !important;
+  height: 45px !important;
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  margin-top: -30px !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  border-radius: 50% !important;
+  font-family: "Poppins", sans-serif; }
+  .owl-prev:hover,
+  .owl-next:hover {
+    background-color: #f89d35 !important;
+    transition: linear 0.5s; }
+
+.owl-prev {
+  left: 0; }
+
+.owl-next {
+  right: 0; }
+
+.what .section-title {
+  font-weight: 600;
+  color: #f89d35; }
+.what p {
+  font-weight: 300;
+  text-align: justify; }
+.what .btn {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #f89d35;
+  transition: all 0.5s ease-in-out; }
+  .what .btn a {
+    color: #fff !important; }
+  .what .btn:hover {
+    background: #6610f2; }
+.what .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  .what .img img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; }
+    .what .img img:hover {
+      transform: scale(1.3); }
+
+.video {
+  position: relative;
+  min-height: 100vh; }
+  .video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.95);
+    width: 60%;
+    height: 100%;
+    z-index: -111111; }
+  .video .vid:hover i {
+    opacity: 1; }
+  .video .vid img {
+    z-index: 11111; }
+  .video .vid i {
+    z-index: 11;
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0; }
+  .video .counter span {
+    color: #f89d35;
+    font-weight: 600; }
+  .video .counter p {
+    color: gray; }
+  .video .modal {
+    z-index: 1111111111111111; }
+    .video .modal .modal-content {
+      background: transparent;
+      border: none; }
+
+@media (max-width: 992px) {
+  .video::before {
+    width: 100%; } }
+.gallery .section-title {
+  font-weight: 600;
+  color: #f89d35; }
+.gallery .gallery-wrap .gallery-item a img {
+  height: 200px;
+  object-fit: cover; }
+
+.events .section-title {
+  font-weight: 600;
+  color: #f89d35; }
+.events .cards .card img {
+  width: 100%; }
+.events .cards .card .card-body i {
+  color: #f89d35; }
+.events .cards .card .card-body a {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #f89d35;
+  transition: all 0.5s ease-in-out; }
+  .events .cards .card .card-body a a {
+    color: #fff !important; }
+  .events .cards .card .card-body a:hover {
+    background: #6610f2; }
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 10px; }
+  footer p i {
+    color: #f89d35 !important;
+    font-size: 20px; }
+  footer p a {
+    color: #f89d35 !important;
+    transition: all 0.5s ease-in-out; }
+    footer p a:hover {
+      color: #6610f2 !important; }
+  footer .links ul li {
+    margin-bottom: 10px;
+    font-size: 20px; }
+    footer .links ul li a {
+      color: #f89d35 !important;
+      transition: all 0.5s ease-in-out; }
+      footer .links ul li a:hover {
+        color: #6610f2 !important; }
+  footer .social a {
+    color: #f89d35 !important;
+    font-size: 25px;
+    padding-left: 10px;
+    transition: all 0.5s ease-in-out; }
+    footer .social a:hover {
+      color: #6610f2 !important; }
+  footer .section-divider {
+    background: rgba(250, 242, 242, 0.233); }
+
+.half-bg {
+  background: url(../img/izi-5.jpg) no-repeat 50% 50%;
+  background-size: cover !important;
+  background-position: center !important; }
+
+.halfheader {
+  height: 50vh;
+  position: relative;
+  z-index: -11111; }
+  .halfheader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-color: #000; }
+  .halfheader .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .halfheader .btn a {
+      color: #fff !important; }
+    .halfheader .btn:hover {
+      background: #6610f2; }
+
+.info .head {
+  border-left: 3px solid #f89d35; }
+.info p {
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.5; }
+.info ul li {
+  letter-spacing: 1px;
+  line-height: 2; }
+.info .cards .card img {
+  width: 64px;
+  height: 64px; }
+
+.board {
+  padding: 80px 0; }
+  .board .container .row .cards .slick-slide {
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: all ease 0.5s; }
+    .board .container .row .cards .slick-slide.slick-current {
+      transform: scale(1);
+      opacity: 1; }
+    .board .container .row .cards .slick-slide img {
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      margin-bottom: 25px; }
+  .board .container .row .cards .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    background: #f89d35;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    width: 100px;
+    outline: none; }
+  .board .container .row .cards .slick-next {
+    left: 52%; }
+  .board .container .row .cards .slick-prev {
+    left: 40%; }
+  .board .container .row .cards .slick-list {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important; }
+  .board .container .row .cards .slider .item {
+    padding: 15px;
+    outline: none; }
+    .board .container .row .cards .slider .item .item-inner {
+      padding: 25px;
+      text-align: center;
+      border: 4px solid #f89d35;
+      border-radius: 18px; }
+
+@media (max-width: 992px) {
+  .slick-arrow {
+    display: none !important; } }
+.team .cards .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+.comingsoon {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/izi-5.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+  .comingsoon hr {
+    border: 1px solid #fff; }
+  .comingsoon #launch {
+    font-size: 40px; }
+  .comingsoon .btn {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #f89d35;
+    transition: all 0.5s ease-in-out; }
+    .comingsoon .btn a {
+      color: #fff !important; }
+    .comingsoon .btn:hover {
+      background: #6610f2; }
+
+/*# sourceMappingURL=style.css.map */
