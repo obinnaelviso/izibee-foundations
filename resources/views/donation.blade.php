@@ -19,6 +19,7 @@
 <!-- START INFO SECTION -->
 <section class="info mt-5 mb-5">
     <div class="container">
+        @include('partials.alerts')
         <livewire:donation-form />
     </div>
 </section>
@@ -34,37 +35,77 @@
 
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-    function payWithPaystack(int amount, int email) {
+    Livewire.on('pay-paystack', paymentDetails => {
+        payWithPaystack(paymentDetails.amount, paymentDetails.email)
+    })
+    Livewire.on('pay-bank-transfer', paymentDetails => {
+        $('#amount').html(paymentDetails.amount)
+        var myModal = new bootstrap.Modal(document.getElementById('bankTransferModal'))
+        myModal.show()
+    })
+
+    function payWithPaystack(amount, email) {
         let handler = PaystackPop.setup({
 
-        key: {{ config('paystack.public_key') }},
+            key: '{{ config('paystack.public_key') }}',
 
-        email,
+            email,
 
-        amount: amount * 100,
+            amount: amount * 100,
 
-        ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
 
-        // label: "Optional string that replaces customer email"
+            // label: "Optional string that replaces customer email"
 
-        onClose: function(){
+            onClose: function(){},
 
-            alert('Window closed.');
+            callback: function(response){
 
-        },
+                // emit event for user reference and trigger email.
 
-        callback: function(response){
-
-            let message = 'Payment complete! Reference: ' + response.reference;
-
-            alert(message);
-
-        }
+                // let message = 'Payment complete! Reference: ' + response.reference;
+                Livewire.emit('paystackSummary', response.reference)
+            }
 
         });
 
         handler.openIframe();
+    }
 
+    function payWithBankTransfer() {
+        console.log('something here')
+        Livewire.emit('bankTransferSummary')
     }
 </script>
+<div class="modal fade" id="bankTransferModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Payment With Bank Transfer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row mb-3">
+                <h6 class="col-md-12">
+                    Pay <b>{{ config('app.currency') }}<span id="amount"></span></b> to one of the following bank details below:
+                </h6>
+            </div>
+          <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li>Bank Name: <b>GT Bank</b></li>
+                    <li>Account Number: <b>48995950500</b></li>
+                    <li>Account Name: <b>IZIBEE HALLMARK FOUNDATIONS</b></li>
+                </ul>
+
+                <p>Click the button below once you have made the payment so that we can confirm your transaction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="payWithBankTransfer()">Finish</button>
+        </div>
+      </div>
+    </div>
+  </div>
 @endpush

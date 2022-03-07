@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Mail\DonationMailAdmin;
+use App\Mail\DonationMailClient;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +16,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Route::get('/test-email', function() {
+//     Mail::to('dreamor47@gmail.com')->send(new DonationMailAdmin([
+//         "name" => "home",
+//         "email" => "dreamor47@gmail.com",
+//         "campaign" => "campaign 1",
+//         "campaign_news" => "something else",
+//         "amount" => 555,
+//         "recurring_payment" => "sure",
+//         "payment_method" => "bank-transfer",
+//         "reference" => "44444"
+//     ]));
+//     Mail::to('dreamor47@gmail.com')->send(new DonationMailClient("obinna elvis", 50000, "something here"));
+// });
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/donation', [HomeController::class, 'donation'])->name('donation');

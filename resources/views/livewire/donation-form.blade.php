@@ -1,8 +1,7 @@
 <div class="row">
     <div class="col-md-8 m-auto">
         <h4 class="mb-3">Complete the form below with your information</h4>
-        <form action="#" submit.prevent="submitDonation">
-            @csrf
+        <form wire:submit.prevent="submitDonation">
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
