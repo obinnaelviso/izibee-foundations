@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/carousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/carousel/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/slick-carousel/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/icofont/icofont.css') }}">
     <link rel="icon" href="{{ asset('img/Izibee editable file LOGO.png') }}">
     @stack('css')
@@ -123,6 +124,7 @@
     <script src="{{ asset('plugins/carousel/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.j') }}s"></script>
     <script src="{{ asset('plugins/counterup/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('plugins/slick-carousel/js/slick.js') }}"></script>
     <script src="{{ asset('plugins/counterup/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     @stack('js')
