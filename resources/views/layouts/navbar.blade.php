@@ -42,7 +42,7 @@
             </ul>
             <button class="btn btn-large btn-block">
                 <a href="{{ route('donation') }}">
-                    Donate
+                    Support
                 </a>
             </button>
         </div>

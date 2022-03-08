@@ -63,7 +63,7 @@ class DonationForm extends Component
 
     protected function notifyClient() {
         if ($this->payment_method == "bank-transfer") {
-            $description = "We are currently process your bank transfer payment.";
+            $description = "We are currently processing your bank transfer payment.";
         } else {
             $description = "We have successfully received your payment, and we say thank you very much.";
         }
