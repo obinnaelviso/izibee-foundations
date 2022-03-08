@@ -6,7 +6,7 @@
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
                         <label for="">Full Name <span class="text-danger fw-bold">*</span></label>
-                        <input type="text" class="form-control" wire:model.lazy="name" required>
+                        <input type="text" class="form-control" name="name" wire:model.lazy="name" required>
                         @error('name')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
@@ -15,7 +15,7 @@
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
                         <label for="">Email Address <span class="text-danger fw-bold">*</span></label>
-                        <input type="email" class="form-control" wire:model.lazy="email" required>
+                        <input type="email" class="form-control" name="email" wire:model.lazy="email" required>
                         @error('email')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
@@ -53,7 +53,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="5000" checked>
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="5000" checked>
                                     {{ config('app.currency') }}5,000
                                 </label>
                             </div>
@@ -61,7 +61,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="10000">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="10000">
                                     {{ config('app.currency') }}10,000
                                 </label>
                             </div>
@@ -69,7 +69,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="20000">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="20000">
                                     {{ config('app.currency') }}20,000
                                 </label>
                             </div>
@@ -77,7 +77,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="30000">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="30000">
                                     {{ config('app.currency') }}30,000
                                 </label>
                             </div>
@@ -85,7 +85,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="40000">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="40000">
                                     {{ config('app.currency') }}40,000
                                 </label>
                             </div>
@@ -93,7 +93,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="50000">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="50000">
                                     {{ config('app.currency') }}50,000
                                 </label>
                             </div>
@@ -101,7 +101,7 @@
                         <div class="col-md-6 mb-1">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" wire:model.lazy="amount" value="">
+                                    <input type="radio" class="form-check-input" name="amount" wire:model.lazy="amount" value="">
                                     Other Amount
                                 </label>
                             </div>
@@ -139,13 +139,13 @@
                     <label>Select Payment Method</label>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" wire:model.lazy="payment_method" value="bank-transfer" checked>
+                            <input type="radio" class="form-check-input" name="payment_method" wire:model.lazy="payment_method" value="bank-transfer" checked>
                             Bank Transfer (Offline)
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" wire:model.lazy="payment_method" value="paystack">
+                            <input type="radio" class="form-check-input" name="payment_method" wire:model.lazy="payment_method" value="paystack">
                             Paystack
                         </label>
                     </div>
