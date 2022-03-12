@@ -26,8 +26,8 @@
                         <label for="campaign">Campaign <span class="text-danger fw-bold">*</span></label>
                         <select wire:model.lazy="campaign" id="campaign" class="form-control" required>
                             <option value="">- Select -</option>
-                            <option>Send a Child to School</option>
-                            <option>Provide clean water for a child</option>
+                            <option>Support Less Privileged Kids</option>
+                            <option>Provide Clean Portable Water</option>
                         </select>
                         @error('campaign')
                             <small class="text-danger">{{ $message }}</small>
@@ -154,9 +154,9 @@
             <div class="row">
                 <div class="col-md-12">
                     @if (!$processingPayment)
-                        <button class="btn btn-warning w-100"> Donate</button>
+                        <button class="btn btn-primary w-100"> Donate</button>
                     @else
-                        <button class="btn btn-warning" type="button" disabled> <i>Donating {{ config('app.currency').$sumAmount }}</i>...</button>
+                        <button class="btn btn-primary" type="button" disabled> <i>Donating {{ config('app.currency').$sumAmount }}</i>...</button>
                     @endif
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <!-- START MAIN NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
             <img src="{{ asset('img/Izibee editable file.png') }}" alt="izibee hallmark foundation" width="50px" height="50px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('about') }}">About</a>
+                    <a class="nav-link {{ Request::is('about/*') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('causes') }}">Causes</a>
+                    <a class="nav-link {{ Request::is('causes/*') ? 'active' : '' }}" href="{{ route('causes') }}">Causes</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -31,13 +31,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('stories') }}">Our Stories</a>
+                    <a class="nav-link {{ Request::is('stories/*') ? 'active' : '' }}" href="{{ route('stories') }}">Our Stories</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog') }}" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
+                    <a class="nav-link {{ Request::is('contact/*') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                 </li>
             </ul>
             <button class="btn btn-large btn-block">

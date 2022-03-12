@@ -18,6 +18,10 @@ class HomeController extends Controller
         return view('causes');
     }
 
+    public function causesSensitizationCampaign() {
+        return view('causes.sensitization-campaign');
+    }
+
     public function donation() {
         return view('donation');
     }

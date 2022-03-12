@@ -9,11 +9,9 @@
                 <div class="col-12 text-white texted text-center mt-5">
                     <p class="fs-5">Let’s give hope to our future generations</p>
                     <h1 class="display-3 text-white lh-1">Bright hope <br> for the future generation</h1>
-                    <button class="btn btn-large btn-block mt-3">
-                        <a href="donation.html">
-                            SUPPORT THIS CAMPAIGN
-                        </a>
-                    </button>
+                    <a href="{{ route('donation') }}" class="btn btn-lg btn-primary">
+                        SUPPORT THIS CAMPAIGN
+                    </a>
                 </div>
             </div>
         </div>
@@ -25,11 +23,9 @@
                 <div class="col-12 text-white text-center texted mt-5">
                     <p class="fs-5">A world where every child can access good and quality education</p>
                     <h1 class="display-3 text-white lh-1">A world where every <br> child is catered for.</h1>
-                    <button class="btn btn-large btn-block mt-3">
-                        <a href="donation.html">
-                            SUPPORT THIS CAMPAIGN
-                        </a>
-                    </button>
+                    <a href="{{ route('donation') }}" class="btn btn-lg btn-primary">
+                        SUPPORT THIS CAMPAIGN
+                    </a>
                 </div>
             </div>
       </div>
@@ -93,7 +89,7 @@
                     We hope to create a better society by helping the less privileged and underserved.
                     </p>
 
-                    <a href="about.html" class="btn text-white p-2">ABOUT US</a>
+                    <a href="{{ route('about') }}" class="btn btn-primary">ABOUT US</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -107,22 +103,22 @@
                         our causes. You could also be part of them. Let's make more impact with your help.
                     </p>
 
-                    <a href="donation.html" class="btn text-white p-2">SUPPORT</a>
+                    <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                    <div class="intro-item mb-5 mb-lg-0">
-                        <div class="img">
-                            <img src="img/volunteer.jpg" alt="" class="img-fluid w-100" style="height: 175px;">
-                        </div>
-                        <h4 class="mt-4 mb-3">Become a Volunteer</h4>
-                        <p>
-                        Identify with a cause you believe in and are passionate about. Get actively and directly involved to provide services
-                        that seeks to address matters affecting society. Then it should lead to the Volunteer page.
-                        </p>
-
-                            <a href="volunteer.html" class="btn text-white p-2">BE A VOLUNTEER</a>
+                <div class="intro-item mb-5 mb-lg-0">
+                    <div class="img">
+                        <img src="img/volunteer.jpg" alt="" class="img-fluid w-100" style="height: 175px;">
                     </div>
+                    <h4 class="mt-4 mb-3">Become a Volunteer</h4>
+                    <p>
+                    Identify with a cause you believe in and are passionate about. Get actively and directly involved to provide services
+                    that seeks to address matters affecting society. Then it should lead to the Volunteer page.
+                    </p>
+
+                        <a href="{{ route('volunteer') }}" class="btn btn-primary">BE A VOLUNTEER</a>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="intro-item mb-5 mb-lg-0">
@@ -135,7 +131,7 @@
                         with your help we can reintegrate children back into schools.
                     </p>
 
-                    <a href="causes.html" class="btn text-white p-2">CAUSES</a>
+                    <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
                 </div>
             </div>
         </div>
@@ -358,7 +354,7 @@
                             <p class="card-text p-2">
                             Care and support orphans and less privileged children in our rural communities.
                             </p>
-                            <a href="donation.html" class="btn text-white p-2">SUPPORT THIS CAMPAIGN</a>
+                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +370,7 @@
                             <p class="card-text p-2">
                                 Support rural communities with drinkable water. We hope to install water facilities in rural communities.
                             </p>
-                            <a href="donation.html" class="btn text-white p-2">SUPPORT THIS CAMPAIGN</a>
+                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +388,7 @@
                                 health care facility, education,
                                 and scholarships.
                             </p>
-                            <a href="causes.html" class="btn text-white p-2">CAUSES</a>
+                            <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
                         </div>
                     </div>
                 </div>

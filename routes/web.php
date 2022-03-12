@@ -34,6 +34,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/donation', [HomeController::class, 'donation'])->name('donation');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/causes', [HomeController::class, 'causes'])->name('causes');
+Route::get('/causes/sensitization-campaign', [HomeController::class, 'causesSensitizationCampaign'])->name('causes.sensitization-campaign');
 Route::get('/stories', [HomeController::class, 'stories'])->name('stories');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
