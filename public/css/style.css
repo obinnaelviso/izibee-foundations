@@ -294,7 +294,75 @@ footer {
 .half-bg {
   background: url(../img/izi-5.jpg) no-repeat 50% 50%;
   background-size: cover !important;
-  background-position: center !important; }
+  background-position: center !important;
+}
+
+.half-bg-volunteer {
+    background: url(../img/volunteer.jpg) no-repeat 50% 50%;
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+.btn-mega {
+    padding: 20px;
+    color: white !important;
+    font-weight: 600;
+    background-color: #ffd30b;
+    transition: background-color 200ms ease-in;
+}
+.btn-primary {
+  color: white;
+  background-color: #f98834;
+  border-color: #f98834;
+  transition: all 200ms ease-in;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #ff942f;
+  border-color: #ff942f;
+}
+.btn-primary:disabled {
+    background-color: #eb7c13;
+    border-color: #eb7c13;
+    opacity: 0.5;
+}
+.btn-primary:focus {
+  color: white;
+  background-color: #eb7c13;
+  border-color: #eb7c13;
+  box-shadow: 0 0 0 .25rem rgba(253, 154, 49, 0.5);
+}
+.btn-primary:active {
+  color: white;
+  background-color: #eb7c13;
+  border-color: #eb7c13;
+}
+
+.text-red {
+    color: red;
+}
+
+.form-control:focus {
+    border-color: #f98834;
+    box-shadow: 0 0 0 .25rem rgba(253, 137, 13, 0.25)
+}
+
+a {
+    color: #f98834 !important;
+}
+a:hover {
+    text-decoration: underline !important;
+}
+.btn-mega:hover {
+    background-color: #ffda38;
+}
+
+.btn-mega > i {
+    transition: margin-left 200ms ease-in;
+}
+
+.btn-mega:hover > i {
+    margin-left: 5px;
+}
 
 .halfheader {
   height: 50vh;

@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="img/Izibee editable file.png" alt="izibee hallmark foundation" width="50px" height="50px">
+            <img src="{{ asset('img/Izibee editable file.png') }}" alt="izibee hallmark foundation" width="50px" height="50px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
             </ul>
             <button class="btn btn-large btn-block">
                 <a href="{{ route('donation') }}">
-                    Support
+                    Donate
                 </a>
             </button>
         </div>

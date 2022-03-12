@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" href="{{ asset('img/Izibee editable file LOGO.png') }}">
     <link rel="stylesheet" href="{{ asset('plugins/fancybox/css/fancybox.css') }}" data-fancybox="gallery">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/carousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/carousel/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/slick-carousel/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/icofont/icofont.css') }}">
-    <link rel="icon" href="{{ asset('img/Izibee editable file LOGO.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @stack('css')
     <title>@yield('title', config('app.name')) - {{ config('app.name') }}</title>
 </head>

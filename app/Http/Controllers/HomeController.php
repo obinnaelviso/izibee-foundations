@@ -37,4 +37,8 @@ class HomeController extends Controller
     public function blog() {
         return redirect('https://blog.izibeehallmarkfoundation.org');
     }
+
+    public function volunteerRegister() {
+        return view('volunteer-register');
+    }
 }

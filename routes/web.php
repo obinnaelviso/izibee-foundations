@@ -38,3 +38,4 @@ Route::get('/stories', [HomeController::class, 'stories'])->name('stories');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/volunteer', [HomeController::class, 'volunteer'])->name('volunteer');
+Route::get('/volunteer/register', [HomeController::class, 'volunteerRegister'])->name('volunteer-register');
