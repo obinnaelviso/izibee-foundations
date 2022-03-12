@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class VolunteerMailAdmin extends Mailable implements ShouldQueue
+class VolunteerMailClient extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,10 +16,9 @@ class VolunteerMailAdmin extends Mailable implements ShouldQueue
      *
      * @return void
      */
-    public $volunteerDetails;
-    public function __construct($volunteerDetails)
+    public function __construct()
     {
-        $this->volunteerDetails = $volunteerDetails;
+        //
     }
 
     /**
@@ -29,9 +28,7 @@ class VolunteerMailAdmin extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->subject('New Volunteer Form')
-                ->markdown('emails.volunteer-mail-admin', [
-                    'volunteerDetails' => $this->volunteerDetails
-                ]);
+        return $this->subject('We Have Received Your IHF Volunteer Request Form')
+                    ->markdown('emails.volunteer-mail-client');
     }
 }

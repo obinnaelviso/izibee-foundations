@@ -9,24 +9,40 @@
             <td><strong>{{ $volunteerDetails['name'] }}</strong></td>
         </tr>
         <tr>
-            <td>Email Address</td>
-            <td><strong>{{ $volunteerDetails['email'] }}</strong></td>
+            <td>Date of Birth</td>
+            <td><strong>{{ $volunteerDetails['dob'] }}</strong></td>
         </tr>
         <tr>
-            <td>Address</td>
-            <td><strong>{{ $volunteerDetails['address'] }}</strong></td>
+            <td>Sex</td>
+            <td><strong>{{ $volunteerDetails['gender'] }}</strong></td>
         </tr>
         <tr>
-            <td>City </td>
-            <td><strong>{{ $volunteerDetails['city'] }}</strong></td>
+            <td>Nationality </td>
+            <td><strong>{{ $volunteerDetails['nationality'] }}</strong></td>
         </tr>
         <tr>
-            <td>State </td>
+            <td>State of Origin </td>
             <td><strong>{{ $volunteerDetails['state'] }}</strong></td>
         </tr>
         <tr>
-            <td>Country </td>
-            <td><strong>{{ $volunteerDetails['country'] }}</strong></td>
+            <td>L.G.A of Origin </td>
+            <td><strong>{{ $volunteerDetails['lga'] }}</strong></td>
+        </tr>
+        <tr>
+            <td>Marital Status </td>
+            <td><strong>{{ $volunteerDetails['marital_status'] }}</strong></td>
+        </tr>
+        <tr>
+            <td>Occupation </td>
+            <td><strong>{{ $volunteerDetails['occupation'] }}</strong></td>
+        </tr>
+        <tr>
+            <td>House Address </td>
+            <td><strong>{{ $volunteerDetails['address'] }}</strong></td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td><strong>{{ $volunteerDetails['occupation'] }}</strong></td>
         </tr>
         <tr>
             <td>Phone Number </td>
@@ -37,36 +53,8 @@
             <td><strong>{{ $volunteerDetails['phone_2'] }}</strong></td>
         </tr>
         <tr>
-            <td>Facebook Handle </td>
-            <td><strong>{{ $volunteerDetails['facebook'] ?? 'N/A' }}</strong></td>
-        </tr>
-        <tr>
-            <td>Instagram Handle</td>
-            <td><strong>{{ $volunteerDetails['instagram'] ?? 'N/A' }}</strong></td>
-        </tr>
-        <tr>
-            <td>Shirt Size </td>
-            <td><strong>{{ $volunteerDetails['shirt_size'] }}</strong></td>
-        </tr>
-        <tr>
-            <td>Are you available for impromptu mini outreach</td>
-            <td><strong>{{ ucfirst($volunteerDetails['impromptu']) }}</strong></td>
-        </tr>
-        <tr>
-            <td>Occupation</td>
-            <td><strong>{{ $volunteerDetails['occupation'] }}</strong></td>
-        </tr>
-        <tr>
-            <td>Organization/Place of Work</td>
-            <td><strong>{{ $volunteerDetails['workplace'] }}</strong></td>
-        </tr>
-        <tr>
-            <td>Date of Birth</td>
-            <td><strong>{{ $volunteerDetails['dob'] }}</strong></td>
-        </tr>
-        <tr>
-            <td>Why do you want to volunteer with {{ config('app.name') }}</td>
-            <td><strong>{{ $volunteerDetails['reason'] }}</strong></td>
+            <td>Educational Qualification, and Other Professional Attainment</td>
+            <td><strong>{{ $volunteerDetails['qualification'] }}</strong></td>
         </tr>
     </tbody>
 </table>

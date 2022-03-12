@@ -3,30 +3,28 @@
 namespace App\Http\Livewire;
 
 use App\Mail\VolunteerMailAdmin;
+use App\Mail\VolunteerMailClient;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class VolunteerForm extends Component
 {
-    public $name, $email, $address, $city, $state, $country, $phone,
-            $phone_2, $facebook, $instagram, $shirt_size, $occupation,
-            $workplace, $dob, $reason;
-    public $impromptu = "no";
+    public $name, $email, $address, $state, $nationality, $lga, $phone,
+            $phone_2, $gender, $occupation, $marital_status, $dob, $qualification;
 
     protected $rules = [
         'name' => 'required',
-        'email' => 'required|email',
-        'address' => 'required',
-        'city' => 'required',
-        'state' => 'required',
-        'country' => 'required',
-        'phone' => 'required',
-        'shirt_size' => 'required',
-        'occupation' => 'required',
-        'impromptu' => 'required',
-        'workplace' => 'required',
         'dob' => 'required',
-        'reason' => 'required',
+        'nationality' => 'required',
+        'state' => 'required',
+        'email' => 'required|email',
+        'lga' => 'required',
+        'marital_status' => 'required',
+        'address' => 'required',
+        'phone' => 'required',
+        'gender' => 'required',
+        'occupation' => 'required',
+        'qualification' => 'required',
     ];
 
     public function updated($propertyName) {
@@ -40,20 +38,18 @@ class VolunteerForm extends Component
                 "name" => $this->name,
                 "email" => $this->email,
                 "address" => $this->address,
-                "city" => $this->city,
+                "qualification" => $this->qualification,
                 "state" => $this->state,
-                "country" => $this->country,
+                "nationality" => $this->nationality,
                 "phone" => $this->phone,
-                "shirt_size" => $this->shirt_size,
+                "gender" => $this->gender,
                 "occupation" => $this->occupation,
-                "impromptu" => $this->impromptu,
-                "workplace" => $this->workplace,
+                "lga" => $this->lga,
+                "marital_status" => $this->marital_status,
                 "dob" => $this->dob,
-                "reason" => $this->reason,
-                "facebook" => $this->facebook,
                 "phone_2" => $this->phone_2,
-                "instagram" => $this->instagram,
             ]));
+            Mail::to($this->email)->send(new VolunteerMailClient);
         } catch (\Throwable $th) {}
         session()->flash("success", "Volunteer form submitted successfully! We'll get back to you shortly.");
         return redirect()->route('volunteer-register');

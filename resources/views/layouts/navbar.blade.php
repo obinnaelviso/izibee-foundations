@@ -14,10 +14,10 @@
                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('about/*') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
+                    <a class="nav-link {{ Request::is('about*') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('causes/*') ? 'active' : '' }}" href="{{ route('causes') }}">Causes</a>
+                    <a class="nav-link {{ Request::is('causes*') ? 'active' : '' }}" href="{{ route('causes') }}">Causes</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -31,13 +31,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('stories/*') ? 'active' : '' }}" href="{{ route('stories') }}">Our Stories</a>
+                    <a class="nav-link {{ Request::is('stories*') ? 'active' : '' }}" href="{{ route('stories') }}">Our Stories</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog') }}" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('contact/*') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
+                    <a class="nav-link {{ Request::is('contact*') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                 </li>
             </ul>
             <button class="btn btn-large btn-block">

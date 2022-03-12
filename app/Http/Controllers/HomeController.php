@@ -30,6 +30,10 @@ class HomeController extends Controller
         return view('volunteer');
     }
 
+    public function volunteerCommunityServicePledge() {
+        return view('volunteer.community-service-pledge');
+    }
+
     public function stories() {
         return view('stories');
     }
@@ -43,6 +47,6 @@ class HomeController extends Controller
     }
 
     public function volunteerRegister() {
-        return view('volunteer-register');
+        return view('volunteer.register');
     }
 }

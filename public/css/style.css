@@ -262,8 +262,18 @@ a.btn-link {
     color: black;
 }
 
+ul.community-service-list li {
+    margin-bottom: 15px;
+    list-style-type: square;
+}
+
 a.btn-link:hover {
     color: #eb7c13;
+}
+
+.btn.btn-mega:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(253, 237, 13, 0.25);
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -346,6 +356,7 @@ a:hover {
 }
 .btn-mega:hover {
     background-color: #ffda38;
+    text-decoration: none;
 }
 
 .btn-mega > i {
