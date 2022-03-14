@@ -9,7 +9,7 @@ Email: [volunteer@izibeehallmarkfoundation.org](mailto:volunteer@izibeehallmarkf
 
 <br>
 <span style="color: red; font-weight: 700">Warning:</span> This response is automatically generated; it should not be used in any form or manner as an evidence of completion of application with Izibee Hallmark Foundation.
-<br>
+<br><br>
 Thanks,<br>
 {{ config('app.name') }}
 @endcomponent
