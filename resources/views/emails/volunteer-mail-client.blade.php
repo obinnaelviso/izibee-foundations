@@ -1,6 +1,4 @@
 @component('mail::message')
-# Introduction
-
 We are happy that that you consider volunteering and helping us in our efforts as we continue to build our communities into a source of pride. Your contribution will be greatly appreciated by the staff, volunteers, and the communities.
 
 Your application to be a volunteer with Izibee Hallmark Foundation (IHF) has been successfully submitted; please note that IHF will process and review your application accordingly. You are advised that you contact IHF via

@@ -252,6 +252,12 @@ footer {
     background-position: bottom !important;
 }
 
+.half-bg-contact {
+    background: url(../img/image-contact.jpg) no-repeat 50% 50%;
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+
 a.btn-link {
     color: #f98834;
     text-decoration: none;
