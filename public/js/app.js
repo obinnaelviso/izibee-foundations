@@ -35,21 +35,24 @@ $(document).ready(function () {
 // START SLICK CAROUSEL
 
 $(".slider").slick({
-  centerMode: true,
+  centerMode: false,
   autoplay: true,
-  slidesToShow: 3,
+  slidesToShow: 2,
+  autoplaySpeed: 2000,
+  pauseOnFocus: false,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 998,
       settings: {
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {

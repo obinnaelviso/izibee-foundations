@@ -114,7 +114,7 @@
                     <h4 class="mt-4 mb-3">Become a Volunteer</h4>
                     <p>
                     Identify with a cause you believe in and are passionate about. Get actively and directly involved to provide services
-                    that seeks to address matters affecting society. Then it should lead to the Volunteer page.
+                    that seeks to address matters affecting society.
                     </p>
 
                         <a href="{{ route('volunteer') }}" class="btn btn-primary">BE A VOLUNTEER</a>
@@ -145,7 +145,7 @@
         <div class="row mb-5">
             <div class="col-lg-8">
                 <div class="video-content mb-5 mb-lg-0">
-                    <h2 class="display-4 mt-5 mb-5 position-relative text-lg text-white">We can Make a Change <br> in their Lives</h2>
+                    <h2 class="display-4 mt-5 mb-5 position-relative text-lg text-white">Our Impact</h2>
                 </div>
             </div>
         </div>
@@ -159,8 +159,8 @@
         <div class="row counter">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="counter-item mb-5 mb-lg-0 pt-5">
-                    <span class="display-1 count">1</span>
-                    <p class="fs-5">Years of Experience</p>
+                    <span class="display-1 count">10,000+</span>
+                    <p class="fs-5">Volunteer Hours</p>
                 </div>
             </div>
 
@@ -200,6 +200,91 @@
     </div> -->
 </section>
 <!-- END VIDEO/COUNTER -->
+
+
+
+<!-- START EVENTS -->
+<section class="events">
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="text-center">
+                    <p class="section-title">Latest Events</p>
+                    <p class="mt-3 mb-5 position-relative fs-4">
+                       Our Programs
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row cards g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/izi-99.jpg" alt="image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title p-2">Support Less Privileged Kids</h5>
+                            <div class="col-lg-12">
+                                <div class="section-divider"></div>
+                            </div>
+                            <p class="card-text p-2">
+                            Care and support orphans and less privileged children in our rural communities.
+                            </p>
+                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/water.jpg" alt="image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title p-2">Provide Clean Portable Water</h5>
+                            <div class="col-lg-12">
+                                <div class="section-divider"></div>
+                            </div>
+                            <p class="card-text p-2">
+                                Support rural communities with drinkable water. We hope to install water facilities in rural communities.
+                            </p>
+                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/izi-88.jpg" alt="image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title p-2">Sensitization Campaign</h5>
+                            <div class="col-lg-12">
+                                <div class="section-divider"></div>
+                            </div>
+                            <p class="card-text p-2">
+                                Help cater for less privilege via
+                                health care facility, education,
+                                and scholarships.
+                            </p>
+                            <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END EVENTS -->
+
+<!-- START SECTION DIVIDER -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-divider"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION DIVIDER -->
 
 <!-- START GALLERY -->
 <section class="gallery">
@@ -296,18 +381,6 @@
 </section>
 <!-- END GALLERY -->
 
-<!-- START SECTION DIVIDER -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-divider"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END SECTION DIVIDER -->
-
 <!-- START DONATE SECTION -->
 <!-- <div class="donate donate-bg bg-cover d-flex align-items-center min-vh-100">
     <div class="container">
@@ -326,75 +399,4 @@
     </div>
 </div> -->
 <!-- END DONATE SECTION -->
-
-<!-- START EVENTS -->
-<section class="events">
-    <div class="container mt-5 mb-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10">
-                <div class="text-center">
-                    <p class="section-title">Latest Events</p>
-                    <p class="mt-3 mb-5 position-relative fs-4">
-                       Our recent causes
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row cards g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="img/izi-99.jpg" alt="image" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title p-2">Support Less Privileged Kids</h5>
-                            <div class="col-lg-12">
-                                <div class="section-divider"></div>
-                            </div>
-                            <p class="card-text p-2">
-                            Care and support orphans and less privileged children in our rural communities.
-                            </p>
-                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="img/water.jpg" alt="image" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title p-2">Provide Clean Portable Water</h5>
-                            <div class="col-lg-12">
-                                <div class="section-divider"></div>
-                            </div>
-                            <p class="card-text p-2">
-                                Support rural communities with drinkable water. We hope to install water facilities in rural communities.
-                            </p>
-                            <a href="{{ route('donation') }}" class="btn btn-primary">SUPPORT THIS CAMPAIGN</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="img/izi-88.jpg" alt="image" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title p-2">Sensitization Campaign</h5>
-                            <div class="col-lg-12">
-                                <div class="section-divider"></div>
-                            </div>
-                            <p class="card-text p-2">
-                                Help cater for less privilege via
-                                health care facility, education,
-                                and scholarships.
-                            </p>
-                            <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END EVENTS -->
 @endsection

@@ -35,8 +35,7 @@
 @livewireScripts
 <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
 <script>
-const elem = document.querySelector('.datepicker_input');
-const datepickerHidden = document.querySelector('#datepicker_hidden')
+const elem = document.querySelector('.datepicker_input')
 const datepicker = new Datepicker(elem, {
     'format': 'dd/mm/yyyy', // UK format
 });

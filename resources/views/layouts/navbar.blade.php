@@ -14,10 +14,10 @@
                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('about*') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
+                    <a class="nav-link {{ Request::is('about*') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('causes*') ? 'active' : '' }}" href="{{ route('causes') }}">Causes</a>
+                    <a class="nav-link {{ Request::is('causes*') ? 'active' : '' }}" href="{{ route('causes') }}">Our Programs</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -28,6 +28,7 @@
                         <li><a class="dropdown-item" href="{{ route('donation') }}">Donation</a></li>
                         <li><a class="dropdown-item" href="{{ route('volunteer') }}">Be A Volunteer</a></li>
                         <li><a class="dropdown-item" href="{{ route('volunteer') }}">Partnership</a></li>
+                        <li><a class="dropdown-item" href="{{ route('volunteer') }}">Membership</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

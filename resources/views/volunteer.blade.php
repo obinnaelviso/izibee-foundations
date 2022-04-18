@@ -22,18 +22,26 @@
             <div class="col-md-9">
                 <img src="{{ asset('img/2.jpg') }}" class="img-fluid mb-3" alt="official">
 
-                <a href="{{ route('volunteer-register') }}" class="btn btn-mega mb-3" target="_blank">
+                <a href="{{ route('volunteer-register') }}" class="btn btn-mega mb-3">
                     Register as a Volunteer
                     <i class="bi bi-arrow-right"></i>
                 </a>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit recusandae atque ad aliquid sit perferendis harum corporis blanditiis similique impedit nobis ex fuga iure odit deserunt rerum et, itaque omnis.</p>
+                <p>We encourage people to volunteer and get involved inhelping improve the lives and families of less privileged persons in our rural communities, so we hope you find a support organisation in your environment and contact them.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit corporis necessitatibus praesentium eveniet officiis excepturi sapiente iste cumque incidunt?</p>
+                <p>
+                    If you are passionate about helping others, you can make a lot of difference by sharing what drives your passion with others. You can be inspiration to others who would love to help others but don’t know how to go about it. There are several ways to start volunteering, but everything starts with your commitment.
+                    <a href="{{ route('volunteer-register') }}" class="btn-link">Click to register</a>
+                </p>
+                <br>
+                <h5 class="fw-bolder text-uppercase">About Volunteering</h5>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique soluta eum numquam aperiam natus ratione illo sint provident necessitatibus consectetur nemo aspernatur reiciendis voluptates illum, labore nostrum? Temporibus rem suscipit sed, molestiae eligendi reprehenderit ex. Odio eaque quasi voluptatibus veniam quae non ipsa hic est nulla fugiat. Ipsum corporis, nam vel quidem ab aliquam ullam voluptates blanditiis sed nostrum! Facere, possimus ipsa maxime ex doloribus explicabo veniam necessitatibus eum! Eum quo unde porro omnis, deleniti, odit id, nemo recusandae harum enim nostrum explicabo at nisi voluptatibus! Voluptatem consectetur aut iusto cupiditate quos? Aliquam impedit iste eum ea vero a?</p>
+                <p>Volunteering is generally considered as a selfless activity where an individual or group provides services for no financial gain. Volunteering is also popular with skills development and is often intended to promote kindness or to improve the standard of living. Volunteering may have positive benefits for the volunteer as well as for the person or community served.</p>
 
-                <a href="{{ route('volunteer-register') }}" class="btn btn-mega mb-3" target="_blank">
+                <p>Volunteering has the ability to improve the quality of life and health of those who donate their time; and research has found that older adults will benefit the most from volunteering. </p>
+                <br>
+                <p>Volunteering improves not only the communities in which one serves, but also the life of the individual who is providing help to the community.</p>
+                <a href="{{ route('volunteer-register') }}" class="btn btn-mega mb-3">
                     Register as a Volunteer
                     <i class="bi bi-arrow-right"></i>
                 </a>

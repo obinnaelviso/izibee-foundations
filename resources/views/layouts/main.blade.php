@@ -51,16 +51,14 @@
     <!-- START FOOTER SECTION -->
     <footer>
         <div class="container mt-5">
-            <div class="row mb-5">
-                <div class="col-md-3 mb-5">
+            <div class="row mb-3">
+                <div class="col-md-3 mb-3">
                     <h2 class="mb-4">About Us</h2>
-                    <p class="lh-lg">We are a non-governmental, non-for-profit, and a non-partisan organization set up in
-                        the interest of the people because
-                        of the growing rate of poverty, Inequality, and moral decadence in society.</p>
-                    <p><a href="about.html">Learn More <i class="icofont-arrow-right"></i></a></p>
+                    <p class="lh-lg">We are a non-governmental, not-for-profit, and a non-partisan organization set up in the interest of the people because of the growing rate of poverty, Inequality, and moral decadence in society. </p>
+                    <p><a href="{{ route('about') }}" class="btn-link">Learn More <i class="icofont-arrow-right"></i></a></p>
                 </div>
 
-                <div class="col-md-3 mb-5">
+                <div class="col-md-3 mb-3">
                     <h2 class="mb-4">Organization</h2>
 
                     <p class="lh-lg">Address: Plot X53, Close7, Elekahia Housing
@@ -78,14 +76,16 @@
                     </p>
                 </div>
 
-                <div class="col-md-3 mb-5 links">
+                <div class="col-md-3 mb-3 links">
                     <h2 class="mb-4">Quick Links</h2>
                     <ul class="list-unstyled footer-link">
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="{{ route('about') }}">About us</a></li>
                         <!-- <li><a href="#">Services</a></li> -->
-                        <li><a href="volunteer.html">Team</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="donation.html">Support</a></li>
+                        {{-- <li><a href="{{ route('about') }}">Team</a></li> --}}
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('donation') }}">Donate</a></li>
+                        <li><a href="{{ route('blog') }}">Blog</a></li>
+                        <li><a href="{{ route('causes') }}">Our Programs</a></li>
                     </ul>
                 </div>
 

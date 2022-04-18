@@ -93,9 +93,9 @@
           <div class="row">
             <div class="col-md-12">
                 <ul>
-                    <li>Bank Name: <b>GT Bank</b></li>
-                    <li>Account Number: <b>48995950500</b></li>
-                    <li>Account Name: <b>IZIBEE HALLMARK FOUNDATIONS</b></li>
+                    <li>Bank Name: <b>GT BANK</b></li>
+                    <li>Account Number: <b>0655350395</b></li>
+                    <li>Account Name: <b>IZIBEE HALLMARK FOUNDATION</b></li>
                 </ul>
 
                 <p>Click the button below once you have made the payment so that we can confirm your transaction.</p>

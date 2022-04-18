@@ -17,8 +17,8 @@ a {
   color: #000; }
 
 .bg-cover {
-  background-position: center !important;
-  background-size: cover !important; }
+  background-position: center;
+  background-size: cover; }
 
 .texted {
   z-index: 1111; }
@@ -36,7 +36,7 @@ a {
     display: inline-block;
     margin-right: 16px; }
   .top-nav .container .row .socials a {
-    color: #fff !important;
+    color: #fff;
     text-decoration: none;
     margin-right: 15px;
     display: inline-flex;
@@ -58,14 +58,14 @@ a {
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
   z-index: 10; }
   .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover, .navbar .container .collapse .navbar-nav .nav-item .nav-link:active {
-    color: #6610f2 !important; }
+    color: #6610f2; }
   .navbar .container .collapse .btn {
     font-family: "Poppins", sans-serif;
     color: #fff;
     background: #f89d35;
     transition: all 0.5s ease-in-out; }
     .navbar .container .collapse .btn a {
-      color: #fff !important; }
+      color: #fff; }
     .navbar .container .collapse .btn:hover {
       background: #6610f2; }
 
@@ -119,19 +119,19 @@ a {
 .owl-next {
   position: absolute;
   top: 50%;
-  width: 45px !important;
-  height: 45px !important;
+  width: 45px;
+  height: 45px;
   display: grid;
   place-items: center;
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  margin-top: -30px !important;
-  color: #fff !important;
-  font-size: 12px !important;
-  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: -30px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
   font-family: "Poppins", sans-serif; }
   .owl-prev:hover,
   .owl-next:hover {
-    background-color: #f89d35 !important;
+    background-color: #f89d35;
     transition: linear 0.5s; }
 
 .owl-prev {
@@ -166,7 +166,8 @@ a {
     background: rgba(0, 0, 0, 0.95);
     width: 60%;
     height: 100%;
-    z-index: -111111; }
+    z-index: -1111111;
+ }
   .video .vid:hover i {
     opacity: 1; }
   .video .vid img {
@@ -215,47 +216,41 @@ footer {
   color: #fff;
   padding: 10px; }
   footer p i {
-    color: #f89d35 !important;
+    color: #f89d35;
     font-size: 20px; }
   footer p a {
-    color: #f89d35 !important;
+    color: #f89d35;
     transition: all 0.5s ease-in-out; }
-    footer p a:hover {
-      color: #6610f2 !important; }
   footer .links ul li {
     margin-bottom: 10px;
     font-size: 20px; }
     footer .links ul li a {
-      color: #f89d35 !important;
+      color: #f89d35;
       transition: all 0.5s ease-in-out; }
-      footer .links ul li a:hover {
-        color: #6610f2 !important; }
   footer .social a {
-    color: #f89d35 !important;
+    color: #f89d35;
     font-size: 25px;
     padding-left: 10px;
     transition: all 0.5s ease-in-out; }
-    footer .social a:hover {
-      color: #6610f2 !important; }
   footer .section-divider {
     background: rgba(250, 242, 242, 0.233); }
 
 .half-bg {
   background: url(../img/izi-5.jpg) no-repeat 50% 50%;
-  background-size: cover !important;
-  background-position: center !important;
+  background-size: cover;
+  background-position: center;
 }
 
 .half-bg-volunteer {
     background: url(../img/volunteer.jpg) no-repeat 50% 50%;
-    background-size: cover !important;
-    background-position: bottom !important;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .half-bg-contact {
     background: url(../img/image-contact.jpg) no-repeat 50% 50%;
-    background-size: cover !important;
-    background-position: bottom !important;
+    background-size: cover;
+    background-position: bottom;
 }
 
 a.btn-link {
@@ -296,12 +291,12 @@ a.btn-link:hover > i {
 
 .half-bg-causes {
     background: url(../img/1.jpg) no-repeat 50% 50%;
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: cover;
+    background-position: center;
 }
 .btn-mega {
     padding: 20px;
-    color: white !important;
+    color: white;
     font-weight: 600;
     background-color: #ffd30b;
     transition: background-color 200ms ease-in;
@@ -336,13 +331,13 @@ a.btn-link:hover > i {
 }
 
 .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #ff942f !important;
-    text-decoration: none !important;
+    color: #ff942f;
+    text-decoration: none;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-    color: #ff942f !important;
-    text-decoration: none !important
+    color: #ff942f;
+    text-decoration: none
 }
 
 .text-red {
@@ -376,7 +371,7 @@ a:hover {
 .halfheader {
   height: 50vh;
   position: relative;
-  z-index: -11111; }
+ }
   .halfheader::before {
     content: "";
     position: absolute;
@@ -394,7 +389,7 @@ a:hover {
     background: #f89d35;
     transition: all 0.5s ease-in-out; }
     .halfheader .btn a {
-      color: #fff !important; }
+      color: #fff; }
     .halfheader .btn:hover {
       background: #6610f2; }
 
@@ -443,8 +438,8 @@ a:hover {
   .board .container .row .cards .slick-prev {
     left: 40%; }
   .board .container .row .cards .slick-list {
-    padding-top: 55px !important;
-    padding-bottom: 55px !important; }
+    padding-top: 55px;
+    padding-bottom: 55px; }
   .board .container .row .cards .slider .item {
     padding: 15px;
     outline: none; }
@@ -456,7 +451,7 @@ a:hover {
 
 @media (max-width: 992px) {
   .slick-arrow {
-    display: none !important; } }
+    display: none; } }
 .team .cards .card img {
   width: 100%;
   height: 300px;
@@ -477,7 +472,7 @@ a:hover {
     background: #f89d35;
     transition: all 0.5s ease-in-out; }
     .comingsoon .btn a {
-      color: #fff !important; }
+      color: #fff; }
     .comingsoon .btn:hover {
       background: #6610f2; }
 

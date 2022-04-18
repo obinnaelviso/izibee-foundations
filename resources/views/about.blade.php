@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'About')
+@section('title', 'About Us')
 @section('content')
 <!-- START HALF HEADER SECTION -->
 <section class="mb-5">
@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-white texted text-center mt-5">
-                    <h1 class="display-3 text-white lh-1">About</h1>
+                    <h1 class="display-3 text-white lh-1">@yield('title')</h1>
                 </div>
             </div>
         </div>
@@ -22,30 +22,18 @@
             <p class="head fs-2 mt-3">WHO WE ARE</p>
 
             <p>
-                We are a non-governmental, not-for-profit, and a non-partisan organization set up in the interest of the people because
-                of the growing rate of poverty, Inequality, and moral decadence in society. Our foundation was founded to address the
-                holistic needs of all vulnerable and socially excluded groups in society which include, Children, Women, Youths, the
-                elderly and physically challenged who have been neglected. Those who are not privileged enough to cater or survive on
-                their own without the basic skills or knowledge of how to survive in a society with the continuous rise in, poverty,
-                crime, unemployment, and lack of adequate social amenities.
+                We are a non-governmental, not-for-profit, and a non-partisan organization set up in the interest of the people because of the growing rate of poverty, Inequality, and moral decadence in society. Our foundation was founded to address the holistic needs of all vulnerable and socially excluded groups in society which include, Children, Women, Youths, the elderly and physically challenged who have been neglected. Those who are not privileged enough to cater or survive on their own without the basic skills or knowledge of how to survive in a society with the continuous rise in poverty, crime, unemployment, and lack of adequate social amenities.
             </p>
 
             <p>
-                We as an organization see the less privileged people as part of our society in which they have significant roles to play
-                in our country’s future, so helping them achieve their dreams and aspiration becomes important for all of us. We believe
-                that when issues of the less privileged are addressed, it has a ripple effect at the local, state, and national level,
-                which in turn brings stability in society.
+                We as an organization see the less privileged people as part of our society in which they have significant roles to play in our country’s future, so helping them achieve their dreams and aspiration becomes important for all of us. We believe that when issues of the less privileged are addressed, it has a ripple effect at the local, state, and national level, which in turn brings stability in society.
             </p>
 
             <p>
-                These less privileged people in society may have lost hope but giving them a sense of belonging is what we as an
-                organization are passionate about. We try our best to give a listening ear to those in society who want to be heard by
-                advocating on their behalf. IZIBEE HALLMARK FOUNDATION uses the instrument of Social Street Working and Research as its
-                main technique in identifying vulnerable individuals and groups in society. We as an
-                organization are committed to:
+                These less privileged people in society may have lost hope but giving them a sense of belonging is what we as an organization are passionate about. We try our best to give a listening ear to those in society who want to be heard by advocating on their behalf. IZIBEE HALLMARK FOUNDATION uses the instrument of Social Street Working and Research as its main technique in identifying vulnerable individuals and groups in society.
             </p>
 
-            <ul>
+            {{-- <ul>
                 <li>
                     Anti-discriminatory practices and
                     are unprejudiced in our
@@ -66,7 +54,7 @@
                     Tend to act swiftly where and
                     when our attention is need
                 </li>
-            </ul>
+            </ul> --}}
 
             <p class="head fs-2 mt-3">OUR MISSION</p>
 
@@ -76,7 +64,7 @@
                 through real-world social initiatives and programs for a sustainable society.
             </p>
 
-            <p class="head fs-2 mt-3">AIMS</p>
+            <p class="head fs-2 mt-3">OUR AIMS/OBJECTIVES</p>
 
             <ul>
                 <li>
@@ -245,7 +233,7 @@
                             <div class="col-lg-12">
                                 <div class="section-divider"></div>
                             </div>
-                            <p class="mt-2">Seasoned Administrator, Entrepreneur, Philanthropist and Founder</p>
+                            <p class="mt-2">A Seasoned Administrator, Entrepreneur, Philanthropist and Founder Izibee Hallmark Foundation.</p>
                         </div>
                     </div>
                     <div class="item">
@@ -254,11 +242,11 @@
                             <div class="col-lg-12">
                                 <div class="section-divider"></div>
                             </div>
-                            <h4 class="mt-2 mb-2">ZITIMIYOLA ARMSTRONG</h4>
+                            <h4 class="mt-2 mb-2">ZITIMIYOLA ARMSTRONG W.</h4>
                             <div class="col-lg-12">
                                 <div class="section-divider"></div>
                             </div>
-                            <p class="mt-2">Business Developer Expert and GMD ALPHA SPHINX GROUP</p>
+                            <p class="mt-2">Business Development Expert and GMD ALPHA SPHINX GROUP</p>
                         </div>
                     </div>
                     <div class="item">
@@ -267,21 +255,11 @@
                             <div class="col-lg-12">
                                 <div class="section-divider"></div>
                             </div>
-                            <h4 class="mt-2 mb-2">OJUGBELI JENNIFER</h4>
+                            <h4 class="mt-2 mb-2">OJUGBELI JENNIFER CHINWE</h4>
                             <div class="col-lg-12">
                                 <div class="section-divider"></div>
                             </div>
-                            <p class="mt-2">Business Developer Expert and GMD ALPHA SPHINX GROUP</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-inner">
-                            <img src="img/board3.jpg" alt="" class="img-fluid">
-                            <h4 class="mt-2 mb-2">ZITIMIYOLA IZIBENOUA</h4>
-                            <div class="col-lg-12">
-                                <div class="section-divider"></div>
-                            </div>
-                            <p class="mt-2">Seasoned Administrator, Entrepreneur, Philanthropist and Founder</p>
+                            <p class="mt-2">Social Reformer, Entrepreneur and Community Development Advocate.</p>
                         </div>
                     </div>
                 </div>
@@ -299,8 +277,8 @@
         </div>
 
         <div class="container mt-3">
-            <div class="row cards g-4">
-                <div class="col-12 col-md-6 col-lg-4">
+            <div class="row cards g-5">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team1.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -309,7 +287,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team2.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -318,7 +296,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team3.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -327,7 +305,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team4.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -336,16 +314,16 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team5.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
-                            <p class="mt-3 text-center fs-5">OJUGBELI ONEN O.</p>
+                            <p class="mt-3 text-center fs-5">OJUGBELI VICTORY O.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team6.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -354,7 +332,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team7.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
@@ -363,18 +341,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <img src="img/team8.jpg" alt="image" class="card-img-top">
                         <div class="card-body">
                             <p class="mt-3 text-center fs-5">BLESSING JOSHUA M.</p>
-                        </div>
-                    </div>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="img/1.jpg" alt="image" class="card-img-top">
-                        <div class="card-body">
-                            <p class="mt-3 text-center fs-5">OSIVWI SAVIOUR E.</p>
                         </div>
                     </div>
                 </div>

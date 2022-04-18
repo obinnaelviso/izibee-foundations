@@ -30,11 +30,11 @@ Route::get('/test-email', function() {
     Mail::to('dreamor47@gmail.com')->send(new VolunteerMailClient);
 });
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 Route::get('/donation', [HomeController::class, 'donation'])->name('donation');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-Route::get('/causes', [HomeController::class, 'causes'])->name('causes');
-Route::get('/causes/sensitization-campaign', [HomeController::class, 'causesSensitizationCampaign'])->name('causes.sensitization-campaign');
+Route::get('/our-programs', [HomeController::class, 'causes'])->name('causes');
+Route::get('/our-programs/sensitization-campaign', [HomeController::class, 'causesSensitizationCampaign'])->name('causes.sensitization-campaign');
 Route::get('/stories', [HomeController::class, 'stories'])->name('stories');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
