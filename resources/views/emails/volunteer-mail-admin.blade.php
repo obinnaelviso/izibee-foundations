@@ -8,6 +8,10 @@
             <td colspan="2"><strong>PERSONAL DATA</strong></td>
         </tr>
         <tr>
+            <td width="250px">Have you read the Community Service Pledge? <span style="color: red; font-weight: 600">*</span></td>
+            <td><strong>{{ ucfirst($volunteerDetails['read_community_service_pledge']) }}</strong></td>
+        </tr>
+        <tr>
             <td width="250px">Full Name <span style="color: red; font-weight: 600">*</span></td>
             <td><strong>{{ $volunteerDetails['name'] }}</strong></td>
         </tr>

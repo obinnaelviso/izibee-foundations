@@ -22,6 +22,22 @@ class HomeController extends Controller
         return view('causes.sensitization-campaign');
     }
 
+    public function causesHelpSchoolChildren() {
+        return view('causes.help-school-children');
+    }
+
+    public function causesSupportLessPrivileged() {
+        return view('causes.support-less-privileged');
+    }
+
+    public function causesProvideCleanWater() {
+        return view('causes.provide-clean-water');
+    }
+
+    public function causesYouthEmpowerment() {
+        return view('causes.youth-empowerment');
+    }
+
     public function donation() {
         return view('donation');
     }

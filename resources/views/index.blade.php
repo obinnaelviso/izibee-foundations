@@ -131,7 +131,7 @@
                         with your help we can reintegrate children back into schools.
                     </p>
 
-                    <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
+                    <a href="{{ route('causes') }}" class="btn btn-primary">OUR PROGRAMS</a>
                 </div>
             </div>
         </div>
@@ -264,7 +264,7 @@
                                 health care facility, education,
                                 and scholarships.
                             </p>
-                            <a href="{{ route('causes') }}" class="btn btn-primary">CAUSES</a>
+                            <a href="{{ route('causes') }}" class="btn btn-primary">OUR PROGRAMS</a>
                         </div>
                     </div>
                 </div>

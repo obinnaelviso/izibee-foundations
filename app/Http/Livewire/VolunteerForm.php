@@ -19,6 +19,8 @@ class VolunteerForm extends Component
 
     public $worked_with_ngo = 'no';
 
+    public $read_community_service_pledge = 'no';
+
     protected $rules = [
         'name' => 'required',
         'dob' => 'required',
@@ -53,6 +55,7 @@ class VolunteerForm extends Component
         $this->validate();
         try {
             Mail::to(config('mail.from.address'))->send(new VolunteerMailAdmin([
+                "read_community_service_pledge" => $this->read_community_service_pledge,
                 "name" => $this->name,
                 "email" => $this->email,
                 "address" => $this->address,
@@ -85,7 +88,9 @@ class VolunteerForm extends Component
                 "convicted" => $this->convicted,
             ]));
             Mail::to($this->email)->send(new VolunteerMailClient);
-        } catch (\Throwable $th) {}
+        } catch (\Throwable $th) {
+            dd($th->getMessage());
+        }
         session()->flash("success", "Volunteer form submitted successfully! We'll get back to you shortly.");
         return redirect()->route('volunteer-register');
     }

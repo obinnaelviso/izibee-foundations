@@ -41,11 +41,9 @@
                     <a class="nav-link {{ Request::is('contact*') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                 </li>
             </ul>
-            <button class="btn btn-large btn-block">
-                <a href="{{ route('donation') }}">
-                    Donate
-                </a>
-            </button>
+            <a class="btn btn-primary" href="{{ route('donation') }}">
+                Donate
+            </a>
         </div>
     </div>
 </nav>

@@ -68,11 +68,12 @@
 
                     <p>
                         <i class="icofont-phone"></i>
-                        <span>{{ config('app.phone1') }}</span>
+                        <span>
+                            <a href="tel:{{ config('app.phone1') }}">{{ config('app.phone1') }}</a></span>
                     </p>
-                    <p class="fs-6">
+                    <p class="fs-6 text-break">
                         <i class="icofont-email"></i> <br>
-                        <span>{{ config('mail.from.address') }}</span>
+                        <span><a href="mailto:{{ config('mail.from.address') }}">{{ config('mail.from.address') }}</a></span>
                     </p>
                 </div>
 

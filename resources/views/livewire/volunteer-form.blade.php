@@ -7,6 +7,17 @@
             <h4 class="mb-3">PERSONAL DATA</h4>
             <div class="row">
                 <div class="col-lg-12 mb-3">
+                    Have you read the Community Service Pledge? <span class="text-red fw-bold">*</span>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="read_community_service_pledge" wire:model.lazy="read_community_service_pledge" id="worked-with-ngo-yes" value="yes">
+                        <label class="form-check-label" for="worked-with-ngo-yes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="read_community_service_pledge" wire:model.lazy="read_community_service_pledge" id="worked-with-ngo-no" value="no" checked>
+                        <label class="form-check-label" for="worked-with-ngo-no">No</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-3">
                     <div class="form-group">
                         <label for="">Full Name <span class="text-red fw-bold">*</span></label>
                         <input type="text" class="form-control" name="name" wire:model.lazy="name" required>
