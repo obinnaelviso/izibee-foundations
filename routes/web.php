@@ -40,7 +40,6 @@ Route::get('/our-programs/support-the-less-privileged', [HomeController::class, 
 Route::get('/our-programs/provide-clean-portable-water', [HomeController::class, 'causesProvideCleanWater'])->name('causes.provide-clean-water');
 Route::get('/our-programs/youth-empowerment', [HomeController::class, 'causesYouthEmpowerment'])->name('causes.youth-empowerment');
 Route::get('/stories', [HomeController::class, 'stories'])->name('stories');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/volunteer', [HomeController::class, 'volunteer'])->name('volunteer');
 Route::get('/volunteer/community-service-pledge', [HomeController::class, 'volunteerCommunityServicePledge'])->name('volunteer.community-service-pledge');
